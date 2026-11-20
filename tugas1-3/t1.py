@@ -1,0 +1,23 @@
+import tree_sitter_python as tspython
+from tree_sitter import Language, Parser
+
+parser = Parser(Language(tspython.language()))
+
+kode = b"x = 1\n"
+tree = parser.parse(kode)
+print(tree.root_node)
+
+kode = b"def kaii(x, y):\n  return x*y\n"
+tree = parser.parse(kode)
+print(tree.root_node)
+
+kode = b"if x == y:\n    print('sama')\nelse: print('beda')"
+tree = parser.parse(kode)
+print(tree.root_node)
+
+kode = b"class angka:\n def kuadrat(self, x):\n return x*x"
+tree = parser.parse(kode)
+print(tree.root_node)
+
+for c in tree.root_node.children[0].children:
+    print(c.type, "bernama" if c.is_named else "anonim")
