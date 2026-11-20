@@ -2,7 +2,6 @@
   "name": "tree-sitter-filter",
   "version": "0.1.0",
   "description": "Bahasa filter untuk pencarian data admin",
-  "type": "module",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/fadhilarfnn/praktik1-tree-sitter.git.git"
