@@ -1,0 +1,13 @@
+# Berkas draf laporan dan tangkapan layar lokal
+screenshots/
+laporan.md
+
+# Konfigurasi lokal editor dan lock file
+.vscode/
+~$*
+
+# Cache & environment Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/

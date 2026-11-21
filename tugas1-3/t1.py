@@ -1,7 +1,8 @@
 import tree_sitter_python as tspython
 from tree_sitter import Language, Parser
 
-parser = Parser(Language(tspython.language()))
+parser = Parse
+r(Language(tspython.language()))
 
 kode = b"x = 1\n"
 tree = parser.parse(kode)
